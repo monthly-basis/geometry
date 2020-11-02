@@ -25,6 +25,9 @@ class Module
     {
         return [
             'factories' => [
+                GeometryService\Point\Points\Distance::class => function ($sm) {
+                    return new GeometryService\Point\Points\Distance();
+                },
             ],
         ];
     }
